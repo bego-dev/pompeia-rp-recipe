@@ -1,0 +1,16 @@
+name: PompeiaRP
+version: v0.0.1
+author: bego-dev
+description: Recipe for PompeiaRP server.
+
+tasks:
+	# Download default PompeiaRP resources
+    - action: download_github
+      src: https://github.com/bego-dev/pompeia-rp
+      subpath: resources
+      dest: ./resources
+
+	# Download default server.cfg
+    - action: download_file
+      url: https://raw.githubusercontent.com/bego-dev/pompeia-rp-recipe/main/server.cfg
+      path: ./server.cfg
